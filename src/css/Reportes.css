@@ -1,0 +1,49 @@
+.button-reporte{
+    border: 1px solid  #000000;
+    color: #000000;
+    padding: 20px 30px;
+    
+}
+.row{
+    margin: 0%;
+    padding: 0%;
+}
+
+.reportes .row{
+    color: #000000;
+    text-align: justify;
+}
+
+.reportes span{
+}
+
+.reportes input{
+    border: 1px solid #000000;
+}
+
+.reportes .col-sm-12{
+    
+}
+
+#reporteTitle{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#repcontent{
+    text-align: center;
+}
+body{
+
+}
+.nav-link{
+    cursor: pointer;
+
+}
+.active{
+  /*  border-bottom: rgba(0,0,0,.5) solid 1px;*/
+}
+/*Tabla*/
+.grid {
+    max-width: 200px;
+}

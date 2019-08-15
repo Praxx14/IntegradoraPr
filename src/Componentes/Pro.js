@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
 import '../App.css';
-import Buscar from './Buscar.js';
+import { createBrowserHistory as createHistory} from 'history';
+
+const history = new createHistory();
 class Pro extends Component {
 
     state = {};
-
-    CambioLink=(e)=>{
-       /* const ruta =e.target.id;
-        this.props.history.push({
-            pathname: ruta,
-        });*/
-    };
+    Salir=()=>{
+        window.localStorage.removeItem('token');
+        history.push('/');
+        window.location.reload();
+    }
     render() {
         return (
             <header role="banner">
@@ -32,6 +32,9 @@ class Pro extends Component {
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/Reportes">Reportes</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" onClick={this.Salir}>Salir</a>
                                 </li>
                             </ul>
 

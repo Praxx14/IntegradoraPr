@@ -3,10 +3,15 @@ import Consultas from "../Consultas";
 class ReportesA {
     static getEncabezado=(valor)=>{
         let Encabezado = [];
-       // console.log(valor);
-        Object.keys(valor[0]).forEach((Frase, index) => {
-            Encabezado.push(<td key={index}>{Frase}</td>);
-        });
+       if(valor[0] !== undefined){
+           Object.keys(valor[0]).forEach((Frase, index) => {
+               Encabezado.push(<td key={index}>{Frase}</td>);
+           });
+       }else{
+           Object.keys(valor).forEach((Frase, index) => {
+               Encabezado.push(<td key={index}>{Frase}</td>);
+           });
+       }
         return Encabezado;
     };
     static getTablaDianmica=(Array)=>{
@@ -26,7 +31,7 @@ class ReportesA {
     //Ventas
 
     static getTablaFiltroFechas(FI,FF){
-        Consultas.getVentasRangoFechas(FI, FF).then(e => {
+        return Consultas.getVentasRangoFechas(FI, FF).then(e => {
             if (e.data.notFound) {
                 return  null;
             } else {
@@ -36,9 +41,7 @@ class ReportesA {
             }
         }).catch((e) => {
             return 1;
-            console.log(e)
         });
-        return null;
     }
 }
 

@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import '../App.css';
+import { createBrowserHistory as createHistory} from 'history';
 
+const history = new createHistory();
 class Newsletter extends Component {
 
     constructor(props) {
         super(props);
         this.state = {};
     }
-
+    Salir=()=>{
+        window.localStorage.removeItem('token');
+        history.push('/');
+        window.location.reload();
+    }
     render(){
         return(
             <header role="banner" style={{background: '#000'}}>
@@ -28,6 +34,9 @@ class Newsletter extends Component {
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/Reportes">Reportes</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" onClick={this.Salir}>Salir</a>
                                 </li>
                             </ul>
 

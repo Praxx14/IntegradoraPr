@@ -3,7 +3,6 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import  Contenedor from './Componentes/Contenedor';
 import  Reportes from './Componentes/Reportes';
-import Pro from "./Componentes/Pro";
 import Loggin from "./Componentes/Loggin";
 function App() {
   return (

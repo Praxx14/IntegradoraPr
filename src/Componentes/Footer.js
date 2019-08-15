@@ -30,8 +30,8 @@ class Footer extends Component {
                 <h3>Connect</h3>
                 <p>
                   <a href="facebook.com" className="p-2"><span className="fa fa-facebook"></span></a>
-                  <a href="#" className="p-2"><span className="fa fa-twitter"></span></a>
-                  <a href="#" className="p-2"><span className="fa fa-instagram"></span></a>
+                  <a href="twitter.com" className="p-2"><span className="fa fa-twitter"></span></a>
+                  <a href="instagrem.com" className="p-2"><span className="fa fa-instagram"></span></a>
                 </p>
               </div>
             </div>

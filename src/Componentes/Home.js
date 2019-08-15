@@ -50,18 +50,17 @@ class Home extends Component {
     }
 
     render() {
-        const ListaSlider = this.state.ListaFinalItem;
         return (
 <>
 
-    <section className="site-hero overlay" data-stellar-background-ratio="0.5"
-             style={{backgroundImage: 'url(https://www.esan.edu.pe/apuntes-empresariales/2015/06/18/Data_Warehouse_Mart_figura_principal.jpg)', maxHeight:'50vh'}}>
+    <section className="site-hero overlay " data-stellar-background-ratio="0.5"
+             style={{backgroundImage: 'url(https://www.esan.edu.pe/apuntes-empresariales/2015/06/18/Data_Warehouse_Mart_figura_principal.jpg)',
+                 maxHeight:'50vh', marginBottom:'15vh'}}>
         <div className="container">
             <div className="row align-items-center site-hero-inner justify-content-center">
                 <div className="col-md-8 text-center">
 
                     <div className="mb-5 element-animate">
-                        <img src="images/banner_text_1.png" alt="Image placeholder" className="img-md-fluid"/>
                     </div>
 
                 </div>

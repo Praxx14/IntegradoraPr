@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import VerticalSliderSection from './VerticalSliderSection';
-import Services from './Services';
 import SliderSection from './SliderSection';
-import Features from './Features';
-import Newsletter from './Newsletter';
 import Footer from './Footer';
 import IconBoxes from './IconBoxes';
 import Home from "./Home";
 import Pro from "./Pro";
-import {BrowserRouter} from "react-router-dom";
+import Info from "./Info";
 class Contenedor extends Component {
 
     render(){
@@ -16,6 +12,7 @@ class Contenedor extends Component {
             <>
                 <Pro />
                 <Home/>
+                <Info/>
                 <SliderSection/>
                 <IconBoxes/>
                 <Footer/>

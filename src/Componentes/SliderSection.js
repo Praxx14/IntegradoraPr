@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import imagen from '../images/candado.jpg';
 import '../App.css';
 import VerticalSliderSection from './VerticalSliderSection';
 
